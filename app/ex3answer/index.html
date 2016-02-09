@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Exercice 3 - Réponse</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/app/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body ng-app="app">
+<div class="row" ng-controller="main.controller.first as firstCtl">
+    <div class="col-md-6 col-md-offset-3">
+        <div class="panel panel-default">
+            <div class="panel-header text-center">
+                Ajoutez ce qu'il faut dans le controller pour afficher la météo d'Aix quand on clique sur le bouton
+            </div>
+            <div class="panel-body text-center">
+                <button class="btn btn-primary" type="button" ng-click="firstCtl.getWeather('Aix-en-Provence')">
+                    Get Aix-en-Provence weather
+                </button>
+            </div>
+            <div class="panel-footer text-center">
+                <img ng-src="{{firstCtl.imgUrl}}" />
+                <h4 ng-show="firstCtl.temperature">{{ firstCtl.temperature }} °C</h4>
+                <h4 ng-show="firstCtl.windSpeed">{{ firstCtl.windSpeed }} km/h</h4>
+            </div>
+
+        </div>
+    </div>
+</div>
+<script src="/app/bower_components/angular/angular.js"></script>
+<script src="modules/main/index.js"></script>
+<script src="modules/main/controllers/first.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

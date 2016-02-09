@@ -1,0 +1,13 @@
+{
+  "name": "formation-angular",
+  "description": "Exercises",
+  "version": "0.0.0",
+  "homepage": "https://github.com/angular/angular-seed",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "angular": "~1.4.0",
+    "angular-mocks": "~1.4.0",
+    "bootstrap": "^3.3.6"
+  }
+}

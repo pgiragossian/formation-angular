@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Exercice 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/app/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body ng-app="app">
+<div class="row" ng-controller="main.controller.first">
+    <div class="col-md-6 col-md-offset-3">
+        <div class="panel panel-default">
+            <div class="panel-header text-center">
+                Ajoutez ce qu'il faut dans le controller pour faire apparaître "Hello world" ci-dessous
+            </div>
+            <div class="panel-body">
+                {{ex1Txt}}
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/app/bower_components/angular/angular.js"></script>
+<script src="modules/main/index.js"></script>
+<script src="modules/main/controllers/first.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
