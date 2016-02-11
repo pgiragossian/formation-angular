@@ -1,0 +1,1 @@
+angular.module('app', ['angularMoment', 'pascalprecht.translate', 'ngMessages', 'main', 'api', 'i18n']);

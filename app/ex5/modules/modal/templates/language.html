@@ -1,0 +1,13 @@
+<div class="modal-header">
+    <h3 class="modal-title" translate="CHOOSE_LANGUAGE"></h3>
+</div>
+<div class="modal-body">
+    <ul>
+        <li ng-repeat="language in LanguageCtl.i18nFct.availableLanguages">
+            <a ng-click="LanguageCtl.chooseLanguage(language)">{{language}}</a>
+        </li>
+    </ul>
+</div>
+<div class="modal-footer">
+    <button class="btn btn-primary" type="button" ng-click="LanguageCtl.close()">{{ 'OK' | translate }}</button>
+</div>
